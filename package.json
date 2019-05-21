@@ -1,0 +1,39 @@
+{
+  "name": "electron-express",
+  "productName": "electron is listening : http://localhost:3000/",
+  "version": "1.0.0",
+  "description": "Example of embedding a node express server within an electron app",
+  "main": "main.js",
+  "engine": {
+    "node": ">=10.15.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=builds",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.ico --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Open Folder\""
+  },
+  "repository": "https://github.com/jason/electron-express",
+  "keywords": [
+    "node.js",
+    "express",
+    "electron"
+  ],
+  "author": "Jason Henderson",
+  "devDependencies": {
+    "electron": "^5.0.1",
+    "electron-packager": "^13.1.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.1",
+    "electron-log": "^3.0.5",
+    "express": "^4.17.0",
+    "linebyline": "^1.3.0",
+    "serve-favicon": "^2.5.0",
+    "shelljs": "^0.8.3",
+    "winston": "^3.2.1",
+    "winston-express": "^0.1.1"
+  }
+}
