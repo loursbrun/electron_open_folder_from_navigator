@@ -6,7 +6,7 @@
 ![](./img/example.png)
 
 
-####How to run
+#### How to run
                 
 1. Clone the code repository.
 2. Open terminal to code repository.
@@ -26,7 +26,7 @@ http://localhost:3000/?path=/Users/xxxxxxx/Documents/
 The specific folder should be open automaticcaly
 
 
-####Build the app
+#### Build the app
                 
 1. Mac : 
 ```javascript
